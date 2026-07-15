@@ -1,0 +1,3 @@
+OS Name=Windows 11
+BIOS Version/Date=String Goes Here
+Processor=Example

@@ -1,0 +1,35 @@
+{
+  "bios": [
+    {
+      "SerialNumber": "DTB89AA034805019C53000",
+      "Manufacturer": "American Megatrends",
+      "Name": "American Megatrends UEFI Bios",
+      "Version": "1.2.3",
+      "ReleaseDate": "20180712"
+    }
+  ],
+  "baseboard": [
+    {
+      "Product": "Acer Aspire TC-895",
+      "SerialNumber": "DTB89AA034805019C53000",
+      "Manufacturer": "Acer",
+      "Version": "Rev 2.0"
+    }
+  ],
+  "os": [
+    {
+      "Caption": "Microsoft Windows 11 Home",
+      "Version": "10.0.19044",
+      "SerialNumber": "RN0O4-T041A-LW128-PL67T-YBH9V",
+      "BuildNumber": "19044"
+    }
+  ],
+  "cpu": [
+    {
+      "Name": "Intel(R) Core(TM) i7-8650U CPU",
+      "NumberOfCores": "4",
+      "NumberOfLogicalProcessors": "8",
+      "MaxClockSpeed": "1800"
+    }
+  ]
+}
