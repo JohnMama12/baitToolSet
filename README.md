@@ -26,9 +26,9 @@ Recommendations after running SpoofVM:
 
 ## msinfo32.exe
  
-To use it, you will need to create a config.txt in the same folder as msinfo32 (system32). By default the program will load all system values but to change a value to a spoofed value instead you simply enter the value you want to change followed by an = sign.
+To use it, you will need to place the included sample config.txt in the same folder as msinfo32 (system32). By default the program will load all system values but to change a value to a spoofed value instead you simply enter the value you want to change followed by an = sign.
 
- config.txt:
+ Example of setting config.txt:
 
     BIOS Version/Date=American Megatrends Inc. R01-A3, 07/12/2018
     Processor=Intel(R) Core(TM) i7-8700, 2500 Mhz, 2 Core(s), 1 Logical Processor(s)
@@ -51,78 +51,9 @@ Now when you launch msinfo32 it will display all the spoofed values.
 To make it more realistic we can patch wmic. 
 
 ## wmic.exe
-For WMIC, you instead will create a json file in the same folder named 
-fake_wmic_data.json. It is also suggest it you make it a hidden file:
+For WMIC, will need to place the included sample fake_wmic_data.json. (It must be named exactly like that) in the same folder.
+It is also suggest it you make it a hidden file.
 
-    {
-    
-    "bios": [
-    
-    {
-    
-    "SerialNumber": "DTB89AA034805019C53000",
-    
-    "Manufacturer": "American Megatrends",
-    
-    "Name": "American Megatrends UEFI Bios",
-    
-    "Version": "1.2.3",
-    
-    "ReleaseDate": "20180712"
-    
-    }
-    
-    ],
-    
-    "baseboard": [
-    
-    {
-    
-    "Product": "Acer Aspire TC-895",
-    
-    "SerialNumber": "DTB89AA034805019C53000",
-    
-    "Manufacturer": "Acer",
-    
-    "Version": "Rev 2.0"
-    
-    }
-    
-    ],
-    
-    "os": [
-    
-    {
-    
-    "Caption": "Microsoft Windows 11 Home",
-    
-    "Version": "10.0.19044",
-    
-    "SerialNumber": "RN0O4-T041A-LW128-PL67T-YBH9V",
-    
-    "BuildNumber": "19044"
-    
-    }
-    
-    ],
-    
-    "cpu": [
-    
-    {
-    
-    "Name": "Intel(R) Core(TM) i7-8650U CPU",
-    
-    "NumberOfCores": "4",
-    
-    "NumberOfLogicalProcessors": "8",
-    
-    "MaxClockSpeed": "1800"
-    
-    }
-    
-    ]
-    
-    }
 You can then test it by running `wmic baseboard (or) bios get name_of_value` such as `wmic baseboard get Product`.
 ## CMD and POWERSHELL
 As mentioned above, they look identical to the real cmd and powershell, only exception they cannot execute batch or powershell scripts. There has also been blacklisted programs including:
