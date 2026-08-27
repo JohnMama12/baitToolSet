@@ -11,7 +11,10 @@ Current implementation:
 
  - perfmon NO GUI and NO configuration needed. Will show a generic memory corruption error message instead
  - taskmgr NO GUI and NO configuration needed.. Will instead show a fake AppLocker popup, which will tell the user the program is blocked by the administrator. It cannot be reversed by scammers using the Group Policy Editor.
+Todo:
+- Modify Installed program list
 
+#Note this repo does not 100% guarantee your VM will be undetected as currently it does not spoof your current program install list. 
 ## SpoofVM
 This is a work in progress and may have several undiagnosed bugs!
 To use you must execute the following steps:
