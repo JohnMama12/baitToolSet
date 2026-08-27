@@ -14,7 +14,7 @@ Current implementation:
 Todo:
 - Modify Installed program list
 
-#Note this repo does not 100% guarantee your VM will be undetected as currently it does not spoof your current program install list. 
+## Note this repo does not 100% guarantee your VM will be undetected as currently it does not spoof your current program install list. 
 ## SpoofVM
 This is a work in progress and may have several undiagnosed bugs!
 To use you must execute the following steps:
