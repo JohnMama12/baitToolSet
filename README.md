@@ -8,6 +8,7 @@
 
 
 > **Disclaimer:** This tool set does **not** 100% guarantee your VM will remain undetected, as spoofing the installed software list is currently unsupported.
+> AI was used in the creation of this project. 
 
 ---
 
